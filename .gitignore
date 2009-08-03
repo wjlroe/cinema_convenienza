@@ -1,0 +1,8 @@
+*~
+*.sqlite[23]
+populate.rake
+vendor/
+log/
+doc/
+tmp/
+.#*
