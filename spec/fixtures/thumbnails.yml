@@ -1,0 +1,19 @@
+# == Schema Information
+#
+# Table name: thumbnails
+#
+#  id                 :integer         not null, primary key
+#  thumb_file_name    :string(255)
+#  thumb_content_type :string(255)
+#  thumb_file_size    :integer
+#  created_at         :datetime
+#  updated_at         :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+# one:
+#   column: value
+#
+# two:
+#   column: value

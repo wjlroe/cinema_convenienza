@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: films
+#
+#  id           :integer         not null, primary key
+#  name         :string(255)
+#  duration     :time
+#  release_date :datetime
+#  location     :string(255)
+#  format       :string(255)
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  duration: 2009-08-07 23:43:22
+  release_date: 2009-08-07 23:43:22
+  location: MyString
+  format: MyString
+
+two:
+  name: MyString
+  duration: 2009-08-07 23:43:22
+  release_date: 2009-08-07 23:43:22
+  location: MyString
+  format: MyString

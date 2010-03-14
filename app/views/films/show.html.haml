@@ -1,0 +1,19 @@
+%dl
+  %dt Name:
+  %dd= @film.name
+
+  %dt Duration:
+  %dd= @film.duration
+
+  %dt Release date:
+  %dd= @film.release_date
+
+  %dt Location:
+  %dd= @film.location
+
+  %dt Format:
+  %dd= @film.format
+
+= link_to 'Edit', edit_film_path(@film)
+|
+= link_to 'Back', films_path

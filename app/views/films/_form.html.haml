@@ -1,0 +1,19 @@
+- form_for(@film) do |f|
+  = f.error_messages
+
+  %dl
+    %dt= f.label :name
+    %dd= f.text_field :name
+    %dt= label_tag :hours
+    %dd= select_tag :hours, options_for_select((0..23))
+    %dt= label_tag :minutes
+    %dd= select_tag :minutes, options_for_select((0..60))
+    %dt= label_tag :seconds
+    %dd= select_tag :seconds, options_for_select((0..60))
+    %dt= f.label :release_date
+    %dd= f.datetime_select :release_date
+    %dt= f.label :location
+    %dd= f.text_field :location
+    %dt= f.label :format
+    %dd= f.text_field :format
+    %dt= f.submit 'Create'

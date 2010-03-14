@@ -1,0 +1,22 @@
+%h1 Listing films
+
+%table
+  %tr
+    %th Name
+    %th Duration
+    %th Release date
+    %th Location
+    %th Format
+
+  - @films.each do |film|
+    %tr
+      %td= film.name
+      %td= film.duration
+      %td= film.release_date
+      %td= film.location
+      %td= film.format
+      %td= link_to 'Show', film
+      %td= link_to 'Edit', edit_film_path(film)
+      %td= link_to 'Destroy', film, :confirm => 'Are you sure?', :method => :delete
+
+= link_to 'New film', new_film_path
